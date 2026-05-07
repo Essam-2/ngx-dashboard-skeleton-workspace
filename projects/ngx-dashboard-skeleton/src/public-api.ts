@@ -7,3 +7,4 @@ export * from './lib/skeleton-table/skeleton-table';
 export * from './lib/skeleton-card/skeleton-card';
 export * from './lib/skeleton-chart/skeleton-chart';
 export * from './lib/skeleton-avatar/skeleton-avatar';
+export * from './lib/skeleton-text/skeleton-text';

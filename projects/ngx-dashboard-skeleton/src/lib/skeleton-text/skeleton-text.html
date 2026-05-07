@@ -1,0 +1,9 @@
+<div class="ngx-skeleton-text" [style.gap.px]="gap">
+  @for (line of lineItems; track $index) {
+    <div
+      class="ngx-skeleton-text-line"
+      [style.height.px]="lineHeight"
+      [style.width]="$index === lineItems.length - 1 ? lastLineWidth : '100%'">
+    </div>
+  }
+</div>

@@ -1,0 +1,27 @@
+.ngx-skeleton-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ngx-skeleton-text-line {
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f7f7f7 50%,
+    #eeeeee 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading 1.4s infinite;
+}
+
+@keyframes ngx-skeleton-loading {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
