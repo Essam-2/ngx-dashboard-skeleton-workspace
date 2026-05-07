@@ -1,12 +1,33 @@
 {
   "name": "ngx-dashboard-skeleton",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "peerDependencies": {
-    "@angular/common": "^21.2.0",
-    "@angular/core": "^21.2.0"
+    "@angular/common": "^21.0.0",
+    "@angular/core": "^21.0.0"
   },
   "dependencies": {
-    "tslib": "^2.3.0"
+    "tslib": "^2.8.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "description": "Modern Angular skeleton loading library for dashboards, cards, tables, charts, avatars, text placeholders, and wrappers.",
+  "keywords": [
+    "angular",
+    "skeleton",
+    "loading",
+    "loader",
+    "dashboard",
+    "placeholder",
+    "ngx",
+    "angular-ui"
+  ],
+  "author": "Essam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Essam-2/ngx-dashboard-skeleton.git"
+  },
+  "homepage": "https://github.com/Essam-2/ngx-dashboard-skeleton#readme",
+  "bugs": {
+    "url": "https://github.com/Essam-2/ngx-dashboard-skeleton/issues"
+  }
 }
