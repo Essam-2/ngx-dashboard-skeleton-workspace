@@ -1,0 +1,23 @@
+<div class="ngx-skeleton-chart" [style.height.px]="height">
+  @if (type === 'bar') {
+    <div class="ngx-skeleton-bars">
+      @for (bar of barItems; track $index) {
+        <div
+          class="ngx-skeleton-bar"
+          [style.height.%]="35 + (($index * 13) % 55)">
+        </div>
+      }
+    </div>
+  }
+
+  @if (type === 'line') {
+    <div class="ngx-skeleton-line-chart">
+      <div class="ngx-skeleton-line-path"></div>
+      <div class="ngx-skeleton-line-path small"></div>
+    </div>
+  }
+
+  @if (type === 'pie') {
+    <div class="ngx-skeleton-pie"></div>
+  }
+</div>

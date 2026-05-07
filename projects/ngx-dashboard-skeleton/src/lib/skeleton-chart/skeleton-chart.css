@@ -1,0 +1,96 @@
+.ngx-skeleton-chart {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.ngx-skeleton-bars {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.ngx-skeleton-bar {
+  flex: 1;
+  min-height: 40px;
+  border-radius: 8px 8px 4px 4px;
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f7f7f7 50%,
+    #eeeeee 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading 1.4s infinite;
+}
+
+.ngx-skeleton-line-chart {
+  position: relative;
+  height: 100%;
+}
+
+.ngx-skeleton-line-path {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  width: 90%;
+  height: 14px;
+  border-radius: 999px;
+  transform: rotate(-8deg);
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f7f7f7 50%,
+    #eeeeee 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading 1.4s infinite;
+}
+
+.ngx-skeleton-line-path.small {
+  top: 62%;
+  width: 65%;
+  transform: rotate(6deg);
+}
+
+.ngx-skeleton-pie {
+  width: 170px;
+  height: 170px;
+  margin: 24px auto;
+  border-radius: 50%;
+  background: conic-gradient(
+    #eeeeee 0deg 90deg,
+    #f7f7f7 90deg 180deg,
+    #eeeeee 180deg 270deg,
+    #f7f7f7 270deg 360deg
+  );
+  animation: ngx-skeleton-pulse 1.4s infinite;
+}
+
+@keyframes ngx-skeleton-loading {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@keyframes ngx-skeleton-pulse {
+  0% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.7;
+  }
+}
