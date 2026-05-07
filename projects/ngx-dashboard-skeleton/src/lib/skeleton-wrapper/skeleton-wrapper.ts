@@ -1,6 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { SkeletonTable } from '../skeleton-table/skeleton-table';
-import { SkeletonAvatar, SkeletonAvatarShape, SkeletonCard, SkeletonChart, SkeletonChartType, SkeletonConfig, SkeletonDashboard, SkeletonText } from '../../public-api';
+import { SkeletonAvatar, SkeletonAvatarShape } from '../skeleton-avatar/skeleton-avatar';
+import { SkeletonCard } from '../skeleton-card/skeleton-card';
+import { SkeletonChart, SkeletonChartType } from '../skeleton-chart/skeleton-chart';
+import { SkeletonConfig } from '../skeleton-config';
+import { SkeletonDashboard } from '../skeleton-dashboard/skeleton-dashboard';
+import { SkeletonText } from '../skeleton-text/skeleton-text';
 
 export type SkeletonWrapperType =
   | 'table'

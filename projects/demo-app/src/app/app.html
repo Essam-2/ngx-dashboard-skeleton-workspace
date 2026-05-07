@@ -1,9 +1,3 @@
-<lib-skeleton-wrapper
-  [loading]="true"
-  skeleton="text"
-  [lines]="6">
-  <div class="real-card">
-    <h3>Real Content</h3>
-    <p>This appears when loading is false.</p>
-  </div>
-</lib-skeleton-wrapper>
+<div *ngxSkeleton="true; type: 'card'">
+  <h2>Real Content</h2>
+</div>

@@ -8,7 +8,7 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "paths": {
-      "ngx-dashboard-skeleton": ["./dist/ngx-dashboard-skeleton"]
+      "ngx-dashboard-skeleton": ["./projects/ngx-dashboard-skeleton/src/public-api.ts"]
     },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,

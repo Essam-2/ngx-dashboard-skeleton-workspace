@@ -1,21 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
-@import "../../../dist/ngx-dashboard-skeleton/themes/skeleton-theme.css";
-
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background: #121212;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+:root {
+  --ngx-skeleton-base: #eeeeee;
+  --ngx-skeleton-highlight: #f7f7f7;
+  --ngx-skeleton-surface: #ffffff;
+  --ngx-skeleton-border: #eeeeee;
 }
 
-body {
-  padding: 40px;
-}
-
-.dark {
+.dark,
+[data-theme='dark'] {
   --ngx-skeleton-base: #2d2d2d;
   --ngx-skeleton-highlight: #3a3a3a;
+  --ngx-skeleton-surface: #1e1e1e;
+  --ngx-skeleton-border: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  background: #121212;
+  color: white;
 }

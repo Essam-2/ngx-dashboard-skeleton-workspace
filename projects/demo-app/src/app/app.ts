@@ -1,13 +1,11 @@
 import { Component, signal } from '@angular/core';
-import {  
-  SkeletonWrapper
-} from 'ngx-dashboard-skeleton';
+import { SkeletonDirective  } from 'ngx-dashboard-skeleton';
 
 
 @Component({
   selector: 'app-root',
   imports: [
-    SkeletonWrapper
+    SkeletonDirective 
   ],
 
   templateUrl: './app.html',
