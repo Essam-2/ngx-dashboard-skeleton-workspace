@@ -1,0 +1,50 @@
+@if (loading) {
+  @switch (skeleton) {
+    @case ('table') {
+      <lib-skeleton-table
+        [rows]="rows"
+        [columns]="columns"
+        [config]="config">
+      </lib-skeleton-table>
+    }
+
+    @case ('card') {
+      <lib-skeleton-card
+        [lines]="lines"
+        [config]="config">
+      </lib-skeleton-card>
+    }
+
+    @case ('chart') {
+      <lib-skeleton-chart
+        [type]="chartType"
+        [height]="chartHeight"
+        [config]="config">
+      </lib-skeleton-chart>
+    }
+
+    @case ('dashboard') {
+      <lib-skeleton-dashboard
+        [cards]="cards"
+        [config]="config">
+      </lib-skeleton-dashboard>
+    }
+
+    @case ('avatar') {
+      <lib-skeleton-avatar
+        [size]="avatarSize"
+        [shape]="avatarShape"
+        [config]="config">
+      </lib-skeleton-avatar>
+    }
+
+    @default {
+      <lib-skeleton-text
+        [lines]="lines"
+        [config]="config">
+      </lib-skeleton-text>
+    }
+  }
+} @else {
+  <ng-content></ng-content>
+}

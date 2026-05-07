@@ -1,23 +1,13 @@
 import { Component, signal } from '@angular/core';
-import { 
-  SkeletonAvatar, 
-  SkeletonCard, 
-  SkeletonChart, 
-  SkeletonTable, 
-  SkeletonText,
-  SkeletonDashboard
+import {  
+  SkeletonWrapper
 } from 'ngx-dashboard-skeleton';
 
 
 @Component({
   selector: 'app-root',
   imports: [
-    SkeletonTable,
-    SkeletonCard,
-    SkeletonChart,
-    SkeletonAvatar,
-    SkeletonText,
-    SkeletonDashboard,
+    SkeletonWrapper
   ],
 
   templateUrl: './app.html',
