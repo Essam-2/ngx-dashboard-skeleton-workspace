@@ -1,3 +1,5 @@
+import { InjectionToken } from '@angular/core';
+
 export interface SkeletonConfig {
   animationDuration?: string;
   baseColor?: string;
@@ -11,3 +13,7 @@ export const DEFAULT_SKELETON_CONFIG: Required<SkeletonConfig> = {
   highlightColor: '#f7f7f7',
   borderRadius: '8px',
 };
+
+export const SKELETON_CONFIG = new InjectionToken<SkeletonConfig>(
+  'SKELETON_CONFIG'
+);

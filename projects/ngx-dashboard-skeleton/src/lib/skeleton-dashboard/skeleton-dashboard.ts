@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { DEFAULT_SKELETON_CONFIG, SkeletonConfig } from '../skeleton-config';
+import { Component, Inject, Input, Optional } from '@angular/core';
+import { DEFAULT_SKELETON_CONFIG, SKELETON_CONFIG, SkeletonConfig } from '../skeleton-config';
 
 @Component({
   selector: 'lib-skeleton-dashboard',
@@ -13,9 +13,17 @@ export class SkeletonDashboard {
   @Input() showChart = true;
   @Input() config: SkeletonConfig = {};
 
+
+  constructor(
+    @Optional()
+    @Inject(SKELETON_CONFIG)
+    private globalConfig: SkeletonConfig | null
+  ) {}
+
   get settings(): Required<SkeletonConfig> {
     return {
       ...DEFAULT_SKELETON_CONFIG,
+      ...(this.globalConfig ?? {}),
       ...this.config,
     };
   }
