@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DEFAULT_SKELETON_CONFIG, SkeletonConfig } from '../skeleton-config';
 
 @Component({
   selector: 'lib-skeleton-table',
@@ -9,6 +10,14 @@ import { Component, Input } from '@angular/core';
 export class SkeletonTable {
   @Input() rows = 5;
   @Input() columns = 4;
+  @Input() config: SkeletonConfig = {};
+
+  get settings(): Required<SkeletonConfig> {
+    return {
+      ...DEFAULT_SKELETON_CONFIG,
+      ...this.config,
+    };
+  }
 
   get rowItems(): number[] {
     return Array.from({ length: this.rows });

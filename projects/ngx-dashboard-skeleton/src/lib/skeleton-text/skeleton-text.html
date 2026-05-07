@@ -3,7 +3,11 @@
     <div
       class="ngx-skeleton-text-line"
       [style.height.px]="lineHeight"
-      [style.width]="$index === lineItems.length - 1 ? lastLineWidth : '100%'">
+      [style.width]="$index === lineItems.length - 1 ? lastLineWidth : '100%'"
+      [style.border-radius]="settings.borderRadius"
+      [style.--ngx-skeleton-base]="settings.baseColor"
+      [style.--ngx-skeleton-highlight]="settings.highlightColor"
+      [style.--ngx-skeleton-duration]="settings.animationDuration">
     </div>
   }
 </div>

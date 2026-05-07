@@ -1,4 +1,8 @@
-<div class="ngx-skeleton-table">
+<div class="ngx-skeleton-table"
+  [style.--ngx-skeleton-base]="settings.baseColor"
+  [style.--ngx-skeleton-highlight]="settings.highlightColor"
+  [style.--ngx-skeleton-duration]="settings.animationDuration"
+  [style.border-radius]="settings.borderRadius">
   @for (row of rowItems; track $index) {
     <div class="ngx-skeleton-row">
       @for (column of columnItems; track $index) {

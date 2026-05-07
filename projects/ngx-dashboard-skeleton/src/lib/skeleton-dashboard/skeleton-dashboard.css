@@ -13,12 +13,28 @@
   width: 220px;
   height: 28px;
   border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    var(--ngx-skeleton-base) 25%,
+    var(--ngx-skeleton-highlight) 50%,
+    var(--ngx-skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading var(--ngx-skeleton-duration) infinite;
 }
 
 .ngx-skeleton-action {
   width: 120px;
   height: 36px;
   border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    var(--ngx-skeleton-base) 25%,
+    var(--ngx-skeleton-highlight) 50%,
+    var(--ngx-skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading var(--ngx-skeleton-duration) infinite;
 }
 
 .ngx-skeleton-card-grid {
@@ -31,7 +47,7 @@
 .ngx-skeleton-stat-card,
 .ngx-skeleton-chart-box,
 .ngx-skeleton-table-box {
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--ngx-skeleton-base);
   background: #ffffff;
   border-radius: 14px;
   padding: 16px;
@@ -42,12 +58,28 @@
   height: 16px;
   border-radius: 999px;
   margin-bottom: 16px;
+  background: linear-gradient(
+    90deg,
+    var(--ngx-skeleton-base) 25%,
+    var(--ngx-skeleton-highlight) 50%,
+    var(--ngx-skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading var(--ngx-skeleton-duration) infinite;
 }
 
 .ngx-skeleton-stat-value {
   width: 40%;
   height: 28px;
   border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    var(--ngx-skeleton-base) 25%,
+    var(--ngx-skeleton-highlight) 50%,
+    var(--ngx-skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading var(--ngx-skeleton-duration) infinite;
 }
 
 .ngx-skeleton-chart-box {
@@ -65,6 +97,14 @@
 .ngx-skeleton-bar {
   flex: 1;
   border-radius: 8px 8px 4px 4px;
+  background: linear-gradient(
+    90deg,
+    var(--ngx-skeleton-base) 25%,
+    var(--ngx-skeleton-highlight) 50%,
+    var(--ngx-skeleton-base) 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading var(--ngx-skeleton-duration) infinite;
 }
 
 .bar-1 {
@@ -98,25 +138,17 @@
 }
 
 .ngx-skeleton-table-cell {
-  flex: 1;
   height: 20px;
+  flex: 1;
   border-radius: 6px;
-}
-
-.ngx-skeleton-title,
-.ngx-skeleton-action,
-.ngx-skeleton-stat-title,
-.ngx-skeleton-stat-value,
-.ngx-skeleton-bar,
-.ngx-skeleton-table-cell {
   background: linear-gradient(
     90deg,
-    #eeeeee 25%,
-    #f7f7f7 50%,
-    #eeeeee 75%
+    var(--ngx-skeleton-base) 25%,
+    var(--ngx-skeleton-highlight) 50%,
+    var(--ngx-skeleton-base) 75%
   );
   background-size: 200% 100%;
-  animation: ngx-skeleton-loading 1.4s infinite;
+  animation: ngx-skeleton-loading var(--ngx-skeleton-duration) infinite;
 }
 
 @keyframes ngx-skeleton-loading {

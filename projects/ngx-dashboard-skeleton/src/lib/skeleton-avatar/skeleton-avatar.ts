@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DEFAULT_SKELETON_CONFIG, SkeletonConfig } from '../skeleton-config';
 
 export type SkeletonAvatarShape = 'circle' | 'square';
 
@@ -12,4 +13,12 @@ export type SkeletonAvatarShape = 'circle' | 'square';
 export class SkeletonAvatar {
   @Input() size = 48;
   @Input() shape: SkeletonAvatarShape = 'circle';
+  @Input() config: SkeletonConfig = {};
+
+  get settings(): Required<SkeletonConfig> {
+    return {
+      ...DEFAULT_SKELETON_CONFIG,
+      ...this.config,
+    };
+  }
 }

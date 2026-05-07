@@ -1,4 +1,8 @@
-<div class="ngx-skeleton-dashboard">
+<div class="ngx-skeleton-dashboard"
+  [style.--ngx-skeleton-base]="settings.baseColor"
+  [style.--ngx-skeleton-highlight]="settings.highlightColor"
+  [style.--ngx-skeleton-duration]="settings.animationDuration"
+  [style.border-radius]="settings.borderRadius">
   <div class="ngx-skeleton-dashboard-header">
     <div class="ngx-skeleton-title"></div>
     <div class="ngx-skeleton-action"></div>

@@ -5,15 +5,14 @@
 }
 
 .ngx-skeleton-text-line {
-  border-radius: 999px;
   background: linear-gradient(
     90deg,
-    #eeeeee 25%,
-    #f7f7f7 50%,
-    #eeeeee 75%
+    var(--ngx-skeleton-base) 25%,
+    var(--ngx-skeleton-highlight) 50%,
+    var(--ngx-skeleton-base) 75%
   );
   background-size: 200% 100%;
-  animation: ngx-skeleton-loading 1.4s infinite;
+  animation: ngx-skeleton-loading var(--ngx-skeleton-duration) infinite;
 }
 
 @keyframes ngx-skeleton-loading {

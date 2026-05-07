@@ -3,5 +3,9 @@
   [class.ngx-skeleton-avatar-circle]="shape === 'circle'"
   [class.ngx-skeleton-avatar-square]="shape === 'square'"
   [style.width.px]="size"
-  [style.height.px]="size">
+  [style.height.px]="size"
+  [style.--ngx-skeleton-base]="settings.baseColor"
+  [style.--ngx-skeleton-highlight]="settings.highlightColor"
+  [style.--ngx-skeleton-duration]="settings.animationDuration"
+  [style.border-radius]="settings.borderRadius">
 </div>

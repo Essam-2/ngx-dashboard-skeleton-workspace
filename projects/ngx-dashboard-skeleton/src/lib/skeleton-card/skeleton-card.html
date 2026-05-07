@@ -1,4 +1,8 @@
-<div class="ngx-skeleton-card">
+<div class="ngx-skeleton-card"
+  [style.--ngx-skeleton-base]="settings.baseColor"
+  [style.--ngx-skeleton-highlight]="settings.highlightColor"
+  [style.--ngx-skeleton-duration]="settings.animationDuration"
+  [style.border-radius]="settings.borderRadius">
   @if (showImage) {
     <div class="ngx-skeleton-image"></div>
   }

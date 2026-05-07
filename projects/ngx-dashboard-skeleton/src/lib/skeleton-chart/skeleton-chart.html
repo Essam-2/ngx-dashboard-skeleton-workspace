@@ -1,4 +1,8 @@
-<div class="ngx-skeleton-chart" [style.height.px]="height">
+<div class="ngx-skeleton-chart" [style.height.px]="height"
+  [style.--ngx-skeleton-base]="settings.baseColor"
+  [style.--ngx-skeleton-highlight]="settings.highlightColor"
+  [style.--ngx-skeleton-duration]="settings.animationDuration"
+  [style.border-radius]="settings.borderRadius">
   @if (type === 'bar') {
     <div class="ngx-skeleton-bars">
       @for (bar of barItems; track $index) {

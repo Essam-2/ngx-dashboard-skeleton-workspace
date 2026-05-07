@@ -19,7 +19,7 @@ import {
     SkeletonChart,
     SkeletonAvatar,
     SkeletonText,
-    SkeletonDashboard
+    SkeletonDashboard,
   ],
 
   templateUrl: './app.html',

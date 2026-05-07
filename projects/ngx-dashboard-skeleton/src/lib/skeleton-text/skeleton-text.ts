@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { DEFAULT_SKELETON_CONFIG, SkeletonConfig } from '../skeleton-config';
+
 
 @Component({
   selector: 'lib-skeleton-text',
@@ -11,6 +13,14 @@ export class SkeletonText {
   @Input() lineHeight = 14;
   @Input() gap = 10;
   @Input() lastLineWidth = '65%';
+  @Input() config: SkeletonConfig = {};
+
+  get settings(): Required<SkeletonConfig> {
+    return {
+      ...DEFAULT_SKELETON_CONFIG,
+      ...this.config,
+    };
+  }
 
   get lineItems(): number[] {
     return Array.from({ length: this.lines });
