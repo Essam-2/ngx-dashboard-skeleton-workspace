@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { 
   SkeletonAvatar, 
   SkeletonCard, 
@@ -13,7 +12,6 @@ import {
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet,
     SkeletonTable,
     SkeletonCard,
     SkeletonChart,

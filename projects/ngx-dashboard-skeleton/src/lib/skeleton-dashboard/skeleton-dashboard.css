@@ -47,10 +47,14 @@
 .ngx-skeleton-stat-card,
 .ngx-skeleton-chart-box,
 .ngx-skeleton-table-box {
-  border: 1px solid var(--ngx-skeleton-base);
-  background: #ffffff;
+  border: 1px solid var(--ngx-skeleton-border);
+  background: var(--ngx-skeleton-surface);
   border-radius: 14px;
   padding: 16px;
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -o-border-radius: 14px;
 }
 
 .ngx-skeleton-stat-title {

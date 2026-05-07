@@ -2,8 +2,8 @@
   width: 100%;
   padding: 16px;
   border-radius: 12px;
-  border: 1px solid var(--ngx-skeleton-base);
-  background: #ffffff;
+  border: 1px solid var(--ngx-skeleton-border);
+  background: var(--ngx-skeleton-surface);
   overflow: hidden;
 }
 

@@ -3,5 +3,12 @@
   "dest": "../../dist/ngx-dashboard-skeleton",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "assets": [
+    {
+      "input": "src/lib/themes",
+      "glob": "**/*.css",
+      "output": "themes"
+    }
+  ]
 }
