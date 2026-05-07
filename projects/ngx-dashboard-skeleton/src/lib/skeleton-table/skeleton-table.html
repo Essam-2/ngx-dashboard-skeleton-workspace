@@ -1,0 +1,9 @@
+<div class="ngx-skeleton-table">
+  @for (row of rowItems; track $index) {
+    <div class="ngx-skeleton-row">
+      @for (column of columnItems; track $index) {
+        <div class="ngx-skeleton-cell"></div>
+      }
+    </div>
+  }
+</div>
