@@ -1,11 +1,17 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { SkeletonCard, SkeletonChart, SkeletonTable } from 'ngx-dashboard-skeleton';
+import { SkeletonAvatar, SkeletonCard, SkeletonChart, SkeletonTable } from 'ngx-dashboard-skeleton';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,SkeletonTable,SkeletonCard,SkeletonChart],
+  imports: [
+    RouterOutlet,
+    SkeletonTable,
+    SkeletonCard,
+    SkeletonChart,
+    SkeletonAvatar,
+  ],
 
   templateUrl: './app.html',
   styleUrl: './app.scss',

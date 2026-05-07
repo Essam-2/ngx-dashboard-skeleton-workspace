@@ -1,0 +1,29 @@
+.ngx-skeleton-avatar {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f7f7f7 50%,
+    #eeeeee 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading 1.4s infinite;
+}
+
+.ngx-skeleton-avatar-circle {
+  border-radius: 50%;
+}
+
+.ngx-skeleton-avatar-square {
+  border-radius: 10px;
+}
+
+@keyframes ngx-skeleton-loading {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
