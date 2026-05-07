@@ -1,0 +1,14 @@
+<div class="ngx-skeleton-card">
+  @if (showImage) {
+    <div class="ngx-skeleton-image"></div>
+  }
+
+  <div class="ngx-skeleton-content">
+    @for (line of lineItems; track $index) {
+      <div
+        class="ngx-skeleton-line"
+        [class.ngx-skeleton-line-short]="$index === lineItems.length - 1">
+      </div>
+    }
+  </div>
+</div>

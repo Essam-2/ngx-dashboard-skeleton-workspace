@@ -4,3 +4,4 @@
 
 export * from './lib/ngx-dashboard-skeleton';
 export * from './lib/skeleton-table/skeleton-table';
+export * from './lib/skeleton-card/skeleton-card';

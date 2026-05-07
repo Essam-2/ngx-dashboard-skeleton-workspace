@@ -1,0 +1,56 @@
+.ngx-skeleton-card {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+}
+
+.ngx-skeleton-image {
+  height: 160px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f7f7f7 50%,
+    #eeeeee 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading 1.4s infinite;
+}
+
+.ngx-skeleton-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ngx-skeleton-line {
+  height: 16px;
+  width: 100%;
+  border-radius: 6px;
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f7f7f7 50%,
+    #eeeeee 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading 1.4s infinite;
+}
+
+.ngx-skeleton-line-short {
+  width: 65%;
+}
+
+@keyframes ngx-skeleton-loading {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
