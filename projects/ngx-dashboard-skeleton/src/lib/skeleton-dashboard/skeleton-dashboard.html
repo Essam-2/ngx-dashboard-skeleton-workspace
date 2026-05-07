@@ -1,0 +1,40 @@
+<div class="ngx-skeleton-dashboard">
+  <div class="ngx-skeleton-dashboard-header">
+    <div class="ngx-skeleton-title"></div>
+    <div class="ngx-skeleton-action"></div>
+  </div>
+
+  <div class="ngx-skeleton-card-grid">
+    @for (card of cardItems; track $index) {
+      <div class="ngx-skeleton-stat-card">
+        <div class="ngx-skeleton-stat-title"></div>
+        <div class="ngx-skeleton-stat-value"></div>
+      </div>
+    }
+  </div>
+
+  @if (showChart) {
+    <div class="ngx-skeleton-chart-box">
+      <div class="ngx-skeleton-bars">
+        <div class="ngx-skeleton-bar bar-1"></div>
+        <div class="ngx-skeleton-bar bar-2"></div>
+        <div class="ngx-skeleton-bar bar-3"></div>
+        <div class="ngx-skeleton-bar bar-4"></div>
+        <div class="ngx-skeleton-bar bar-5"></div>
+        <div class="ngx-skeleton-bar bar-6"></div>
+      </div>
+    </div>
+  }
+
+  @if (showTable) {
+    <div class="ngx-skeleton-table-box">
+      @for (row of tableRows; track $index) {
+        <div class="ngx-skeleton-table-row">
+          @for (column of tableColumns; track $index) {
+            <div class="ngx-skeleton-table-cell"></div>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

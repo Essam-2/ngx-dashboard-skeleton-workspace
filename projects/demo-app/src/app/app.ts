@@ -6,6 +6,7 @@ import {
   SkeletonChart, 
   SkeletonTable, 
   SkeletonText,
+  SkeletonDashboard
 } from 'ngx-dashboard-skeleton';
 
 
@@ -18,6 +19,7 @@ import {
     SkeletonChart,
     SkeletonAvatar,
     SkeletonText,
+    SkeletonDashboard
   ],
 
   templateUrl: './app.html',

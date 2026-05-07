@@ -1,0 +1,146 @@
+.ngx-skeleton-dashboard {
+  width: 100%;
+}
+
+.ngx-skeleton-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.ngx-skeleton-title {
+  width: 220px;
+  height: 28px;
+  border-radius: 8px;
+}
+
+.ngx-skeleton-action {
+  width: 120px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.ngx-skeleton-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.ngx-skeleton-stat-card,
+.ngx-skeleton-chart-box,
+.ngx-skeleton-table-box {
+  border: 1px solid #eeeeee;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.ngx-skeleton-stat-title {
+  width: 60%;
+  height: 16px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.ngx-skeleton-stat-value {
+  width: 40%;
+  height: 28px;
+  border-radius: 8px;
+}
+
+.ngx-skeleton-chart-box {
+  height: 260px;
+  margin-bottom: 20px;
+}
+
+.ngx-skeleton-bars {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.ngx-skeleton-bar {
+  flex: 1;
+  border-radius: 8px 8px 4px 4px;
+}
+
+.bar-1 {
+  height: 45%;
+}
+
+.bar-2 {
+  height: 70%;
+}
+
+.bar-3 {
+  height: 55%;
+}
+
+.bar-4 {
+  height: 85%;
+}
+
+.bar-5 {
+  height: 62%;
+}
+
+.bar-6 {
+  height: 75%;
+}
+
+.ngx-skeleton-table-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ngx-skeleton-table-cell {
+  flex: 1;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.ngx-skeleton-title,
+.ngx-skeleton-action,
+.ngx-skeleton-stat-title,
+.ngx-skeleton-stat-value,
+.ngx-skeleton-bar,
+.ngx-skeleton-table-cell {
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f7f7f7 50%,
+    #eeeeee 75%
+  );
+  background-size: 200% 100%;
+  animation: ngx-skeleton-loading 1.4s infinite;
+}
+
+@keyframes ngx-skeleton-loading {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .ngx-skeleton-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .ngx-skeleton-dashboard-header {
+    flex-direction: column;
+  }
+
+  .ngx-skeleton-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
