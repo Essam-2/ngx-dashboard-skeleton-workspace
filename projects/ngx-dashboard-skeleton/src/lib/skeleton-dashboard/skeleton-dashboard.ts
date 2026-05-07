@@ -8,9 +8,13 @@ import { DEFAULT_SKELETON_CONFIG, SKELETON_CONFIG, SkeletonConfig } from '../ske
   styleUrl: './skeleton-dashboard.css',
 })
 export class SkeletonDashboard {
+  /** Number of card placeholders to render in the dashboard. Defaults to `4`. */
   @Input() cards = 4;
+  /** Whether to include a table placeholder in the dashboard. Defaults to `true`. */
   @Input() showTable = true;
+  /** Whether to include a chart placeholder in the dashboard. Defaults to `true`. */
   @Input() showChart = true;
+  /** Local configuration for this component which overrides global config. */
   @Input() config: SkeletonConfig = {};
 
 
@@ -29,6 +33,7 @@ export class SkeletonDashboard {
   }
 
   get cardItems(): number[] {
+    // Used by the template to create an array of placeholders for cards
     return Array.from({ length: this.cards });
   }
 

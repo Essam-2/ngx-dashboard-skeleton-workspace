@@ -9,10 +9,15 @@ import { DEFAULT_SKELETON_CONFIG, SKELETON_CONFIG, SkeletonConfig } from '../ske
   styleUrl: './skeleton-text.css',
 })
 export class SkeletonText {
+  /** Number of text lines to render. Defaults to `3`. */
   @Input() lines = 3;
+  /** Height of each text line in pixels. Defaults to `14`. */
   @Input() lineHeight = 14;
+  /** Gap between lines in pixels. Defaults to `10`. */
   @Input() gap = 10;
+  /** Width of the final line (to simulate shorter last line). Defaults to `'65%'`. */
   @Input() lastLineWidth = '65%';
+  /** Local configuration for this component which overrides global config. */
   @Input() config: SkeletonConfig = {};
 
   constructor(
@@ -30,6 +35,7 @@ export class SkeletonText {
   }
 
   get lineItems(): number[] {
+    // Used by the template to render the requested number of line placeholders
     return Array.from({ length: this.lines });
   }
 }

@@ -10,9 +10,13 @@ export type SkeletonChartType = 'bar' | 'line' | 'pie';
   styleUrl: './skeleton-chart.css',
 })
 export class SkeletonChart {
+  /** Type of chart layout to mimic. Defaults to `'bar'`. */
   @Input() type: SkeletonChartType = 'bar';
+  /** Height of the chart area in pixels. Defaults to `260`. */
   @Input() height = 260;
+  /** Number of bars (for bar charts) to render. Defaults to `8`. */
   @Input() bars = 8;
+  /** Local configuration for this component which overrides global config. */
   @Input() config: SkeletonConfig = {};
 
   constructor(
@@ -30,6 +34,7 @@ export class SkeletonChart {
   }
 
   get barItems(): number[] {
+    // Array used by the template to render placeholder bars
     return Array.from({ length: this.bars });
   }
 }
