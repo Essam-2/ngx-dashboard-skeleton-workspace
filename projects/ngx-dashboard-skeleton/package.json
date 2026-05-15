@@ -20,6 +20,15 @@
     "ngx",
     "angular-ui"
   ],
+  "exports": {
+    ".": {
+      "types": "./types/ngx-dashboard-skeleton.d.ts",
+      "default": "./fesm2022/ngx-dashboard-skeleton.mjs"
+    },
+    "./themes/skeleton-theme.css": {
+      "default": "./themes/skeleton-theme.css"
+    }
+  },
   "author": "Essam",
   "license": "MIT",
   "repository": {
