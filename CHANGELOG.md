@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.2...v1.1.3) (2026-05-15)
+
+
+### Bug Fixes
+
+* [+] export theme css path ([9d2fcbc](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/commit/9d2fcbccc7e3758a0a0edc1b072a166c5f84799c))
+
 ## [1.1.2](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.1...v1.1.2) (2026-05-15)
 
 
