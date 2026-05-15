@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.4...v1.1.5) (2026-05-15)
+
+
+### Bug Fixes
+
+* [+] publish ngx selector rename ([5352346](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/commit/5352346e3d957118b4ccfcfc0a052cd9b1232460))
+
 ## [1.1.4](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.3...v1.1.4) (2026-05-15)
 
 
