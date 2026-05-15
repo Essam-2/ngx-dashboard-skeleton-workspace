@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.1...v1.1.2) (2026-05-15)
+
+
+### Bug Fixes
+
+* [+] republish package README ([af17c4e](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/commit/af17c4e7178e91530467f0f20d65c8ce880c22cc))
+
 ## [1.1.1](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.0...v1.1.1) (2026-05-15)
 
 
