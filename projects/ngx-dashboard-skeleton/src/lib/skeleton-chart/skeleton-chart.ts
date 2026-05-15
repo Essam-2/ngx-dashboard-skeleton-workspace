@@ -4,7 +4,7 @@ import { DEFAULT_SKELETON_CONFIG, SKELETON_CONFIG, SkeletonConfig } from '../ske
 export type SkeletonChartType = 'bar' | 'line' | 'pie';
 
 @Component({
-  selector: 'lib-skeleton-chart',
+  selector: 'ngx-skeleton-chart',
   imports: [],
   templateUrl: './skeleton-chart.html',
   styleUrl: './skeleton-chart.css',

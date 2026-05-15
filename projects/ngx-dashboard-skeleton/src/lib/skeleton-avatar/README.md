@@ -11,7 +11,7 @@ A small placeholder avatar used to represent user/profile images while content i
 ## Usage
 
 ```html
-<lib-skeleton-avatar [size]="64" shape="square"></lib-skeleton-avatar>
+<ngx-skeleton-avatar [size]="64" shape="square"></ngx-skeleton-avatar>
 ```
 
 ## Notes

@@ -12,7 +12,7 @@ A chart-shaped placeholder for use where charts are displayed. It supports diffe
 ## Usage
 
 ```html
-<lib-skeleton-chart type="line" [height]="200"></lib-skeleton-chart>
+<ngx-skeleton-chart type="line" [height]="200"></ngx-skeleton-chart>
 ```
 
 ## Notes

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-ngx-dashboard-skeleton',
+  selector: 'ngx-dashboard-skeleton',
   imports: [],
   template: `
     <p>

@@ -36,7 +36,7 @@ import { SkeletonCard } from 'ngx-dashboard-skeleton';
 	selector: 'app-root',
 	standalone: true,
 	imports: [SkeletonCard],
-	template: '<lib-skeleton-card [lines]="4"></lib-skeleton-card>',
+	template: '<ngx-skeleton-card [lines]="4"></ngx-skeleton-card>',
 })
 export class AppComponent {}
 ```
@@ -45,63 +45,63 @@ export class AppComponent {}
 
 ### Skeleton Card
 
-Selector: `lib-skeleton-card`
+Selector: `ngx-skeleton-card`
 
 ```html
-<lib-skeleton-card [showImage]="true" [lines]="4"></lib-skeleton-card>
+<ngx-skeleton-card [showImage]="true" [lines]="4"></ngx-skeleton-card>
 ```
 
 ### Skeleton Table
 
-Selector: `lib-skeleton-table`
+Selector: `ngx-skeleton-table`
 
 ```html
-<lib-skeleton-table [rows]="6" [columns]="5"></lib-skeleton-table>
+<ngx-skeleton-table [rows]="6" [columns]="5"></ngx-skeleton-table>
 ```
 
 ### Skeleton Chart
 
-Selector: `lib-skeleton-chart`
+Selector: `ngx-skeleton-chart`
 
 ```html
-<lib-skeleton-chart type="bar" [height]="260"></lib-skeleton-chart>
-<lib-skeleton-chart type="line" [height]="220"></lib-skeleton-chart>
-<lib-skeleton-chart type="pie" [height]="260"></lib-skeleton-chart>
+<ngx-skeleton-chart type="bar" [height]="260"></ngx-skeleton-chart>
+<ngx-skeleton-chart type="line" [height]="220"></ngx-skeleton-chart>
+<ngx-skeleton-chart type="pie" [height]="260"></ngx-skeleton-chart>
 ```
 
 ### Skeleton Avatar
 
-Selector: `lib-skeleton-avatar`
+Selector: `ngx-skeleton-avatar`
 
 ```html
-<lib-skeleton-avatar [size]="64" shape="circle"></lib-skeleton-avatar>
-<lib-skeleton-avatar [size]="64" shape="square"></lib-skeleton-avatar>
+<ngx-skeleton-avatar [size]="64" shape="circle"></ngx-skeleton-avatar>
+<ngx-skeleton-avatar [size]="64" shape="square"></ngx-skeleton-avatar>
 ```
 
 ### Skeleton Text
 
-Selector: `lib-skeleton-text`
+Selector: `ngx-skeleton-text`
 
 ```html
-<lib-skeleton-text [lines]="4" [lineHeight]="16" [gap]="12" [lastLineWidth]="'45%'"></lib-skeleton-text>
+<ngx-skeleton-text [lines]="4" [lineHeight]="16" [gap]="12" [lastLineWidth]="'45%'"></ngx-skeleton-text>
 ```
 
 ### Skeleton Dashboard
 
-Selector: `lib-skeleton-dashboard`
+Selector: `ngx-skeleton-dashboard`
 
 ```html
-<lib-skeleton-dashboard [cards]="4" [showChart]="true" [showTable]="true"></lib-skeleton-dashboard>
+<ngx-skeleton-dashboard [cards]="4" [showChart]="true" [showTable]="true"></ngx-skeleton-dashboard>
 ```
 
 ### Skeleton Wrapper
 
-Selector: `lib-skeleton-wrapper`
+Selector: `ngx-skeleton-wrapper`
 
 ```html
-<lib-skeleton-wrapper [loading]="isLoading" skeleton="card" [lines]="4">
+<ngx-skeleton-wrapper [loading]="isLoading" skeleton="card" [lines]="4">
 	<app-real-card></app-real-card>
-</lib-skeleton-wrapper>
+</ngx-skeleton-wrapper>
 ```
 
 ## Structural Directive
@@ -157,7 +157,7 @@ export const appConfig: ApplicationConfig = {
 Each component accepts a `config` input that overrides the global values.
 
 ```html
-<lib-skeleton-text
+<ngx-skeleton-text
 	[lines]="4"
 	[config]="{
 		animationDuration: '2s',
@@ -165,7 +165,7 @@ Each component accepts a `config` input that overrides the global values.
 		highlightColor: '#ffffff',
 		borderRadius: '14px'
 	}"
-></lib-skeleton-text>
+></ngx-skeleton-text>
 ```
 
 ## Dark Mode
@@ -174,19 +174,19 @@ Add the `dark` class or `data-theme="dark"` to a parent element.
 
 ```html
 <div class="dark">
-	<lib-skeleton-dashboard></lib-skeleton-dashboard>
+	<ngx-skeleton-dashboard></ngx-skeleton-dashboard>
 </div>
 ```
 
 ## API Summary
 
-- `SkeletonCard` -> `lib-skeleton-card`
-- `SkeletonTable` -> `lib-skeleton-table`
-- `SkeletonChart` -> `lib-skeleton-chart`
-- `SkeletonAvatar` -> `lib-skeleton-avatar`
-- `SkeletonText` -> `lib-skeleton-text`
-- `SkeletonDashboard` -> `lib-skeleton-dashboard`
-- `SkeletonWrapper` -> `lib-skeleton-wrapper`
+- `SkeletonCard` -> `ngx-skeleton-card`
+- `SkeletonTable` -> `ngx-skeleton-table`
+- `SkeletonChart` -> `ngx-skeleton-chart`
+- `SkeletonAvatar` -> `ngx-skeleton-avatar`
+- `SkeletonText` -> `ngx-skeleton-text`
+- `SkeletonDashboard` -> `ngx-skeleton-dashboard`
+- `SkeletonWrapper` -> `ngx-skeleton-wrapper`
 - `SkeletonDirective` -> `[ngxSkeleton]` with `ngxSkeletonType`
 
 ## License

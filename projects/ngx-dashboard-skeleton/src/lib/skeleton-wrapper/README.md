@@ -12,7 +12,7 @@ A single wrapper component that switches between different skeleton types (table
 ## Usage
 
 ```html
-<lib-skeleton-wrapper loading="true" skeleton="dashboard" [cards]="6"></lib-skeleton-wrapper>
+<ngx-skeleton-wrapper loading="true" skeleton="dashboard" [cards]="6"></ngx-skeleton-wrapper>
 ```
 
 ## Notes

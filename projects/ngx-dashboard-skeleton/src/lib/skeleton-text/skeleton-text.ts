@@ -3,7 +3,7 @@ import { DEFAULT_SKELETON_CONFIG, SKELETON_CONFIG, SkeletonConfig } from '../ske
 
 
 @Component({
-  selector: 'lib-skeleton-text',
+  selector: 'ngx-skeleton-text',
   imports: [],
   templateUrl: './skeleton-text.html',
   styleUrl: './skeleton-text.css',

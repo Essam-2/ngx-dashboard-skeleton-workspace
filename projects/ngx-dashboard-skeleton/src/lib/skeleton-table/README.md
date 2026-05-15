@@ -11,7 +11,7 @@ A table-shaped placeholder for list or table data while the real table is loadin
 ## Usage
 
 ```html
-<lib-skeleton-table [rows]="8" [columns]="6"></lib-skeleton-table>
+<ngx-skeleton-table [rows]="8" [columns]="6"></ngx-skeleton-table>
 ```
 
 ## Notes

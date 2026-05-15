@@ -13,7 +13,7 @@ A simple multi-line text placeholder used to simulate paragraphs and description
 ## Usage
 
 ```html
-<lib-skeleton-text [lines]="4" lastLineWidth="80%"></lib-skeleton-text>
+<ngx-skeleton-text [lines]="4" lastLineWidth="80%"></ngx-skeleton-text>
 ```
 
 ## Notes

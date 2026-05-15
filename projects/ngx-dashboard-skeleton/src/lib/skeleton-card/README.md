@@ -11,7 +11,7 @@ A card-shaped placeholder that simulates an image (optional) and multiple text l
 ## Usage
 
 ```html
-<lib-skeleton-card [showImage]="false" [lines]="4"></lib-skeleton-card>
+<ngx-skeleton-card [showImage]="false" [lines]="4"></ngx-skeleton-card>
 ```
 
 ## Notes

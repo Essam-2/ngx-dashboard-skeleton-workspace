@@ -2,7 +2,7 @@ import { Component, Inject, Input, Optional } from '@angular/core';
 import { DEFAULT_SKELETON_CONFIG, SKELETON_CONFIG, SkeletonConfig } from '../skeleton-config';
 
 @Component({
-  selector: 'lib-skeleton-card',
+  selector: 'ngx-skeleton-card',
   imports: [],
   templateUrl: './skeleton-card.html',
   styleUrl: './skeleton-card.css',

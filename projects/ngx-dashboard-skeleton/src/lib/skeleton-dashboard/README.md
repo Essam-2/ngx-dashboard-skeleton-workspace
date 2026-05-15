@@ -12,7 +12,7 @@ A composite skeleton that lays out multiple card, table, and chart placeholders 
 ## Usage
 
 ```html
-<lib-skeleton-dashboard [cards]="6" [showChart]="false"></lib-skeleton-dashboard>
+<ngx-skeleton-dashboard [cards]="6" [showChart]="false"></ngx-skeleton-dashboard>
 ```
 
 ## Notes

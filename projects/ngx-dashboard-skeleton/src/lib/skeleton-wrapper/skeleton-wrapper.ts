@@ -16,7 +16,7 @@ export type SkeletonWrapperType =
   | 'avatar';
 
 @Component({
-  selector: 'lib-skeleton-wrapper',
+  selector: 'ngx-skeleton-wrapper',
   imports: [
     SkeletonTable,
     SkeletonCard,

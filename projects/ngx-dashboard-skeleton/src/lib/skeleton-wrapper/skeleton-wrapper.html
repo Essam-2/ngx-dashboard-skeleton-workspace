@@ -1,48 +1,48 @@
 @if (loading) {
   @switch (skeleton) {
     @case ('table') {
-      <lib-skeleton-table
+      <ngx-skeleton-table
         [rows]="rows"
         [columns]="columns"
         [config]="config">
-      </lib-skeleton-table>
+      </ngx-skeleton-table>
     }
 
     @case ('card') {
-      <lib-skeleton-card
+      <ngx-skeleton-card
         [lines]="lines"
         [config]="config">
-      </lib-skeleton-card>
+      </ngx-skeleton-card>
     }
 
     @case ('chart') {
-      <lib-skeleton-chart
+      <ngx-skeleton-chart
         [type]="chartType"
         [height]="chartHeight"
         [config]="config">
-      </lib-skeleton-chart>
+      </ngx-skeleton-chart>
     }
 
     @case ('dashboard') {
-      <lib-skeleton-dashboard
+      <ngx-skeleton-dashboard
         [cards]="cards"
         [config]="config">
-      </lib-skeleton-dashboard>
+      </ngx-skeleton-dashboard>
     }
 
     @case ('avatar') {
-      <lib-skeleton-avatar
+      <ngx-skeleton-avatar
         [size]="avatarSize"
         [shape]="avatarShape"
         [config]="config">
-      </lib-skeleton-avatar>
+      </ngx-skeleton-avatar>
     }
 
     @default {
-      <lib-skeleton-text
+      <ngx-skeleton-text
         [lines]="lines"
         [config]="config">
-      </lib-skeleton-text>
+      </ngx-skeleton-text>
     }
   }
 } @else {
