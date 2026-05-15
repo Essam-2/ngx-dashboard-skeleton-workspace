@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.0.1...v1.1.0) (2026-05-15)
+
+
+### Features
+
+* [+] trigger initial npm release ([48a73f8](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/commit/48a73f8044941d71a2ccdc25ca3382bd1bbd876e))
+
 ## [1.0.1](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.0.0...v1.0.1) (2026-05-15)
 
 
