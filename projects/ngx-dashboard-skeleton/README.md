@@ -1,64 +1,195 @@
-# NgxDashboardSkeleton
+# ngx-dashboard-skeleton
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+A lightweight Angular skeleton loading library for dashboards, cards, tables, charts, avatars, text placeholders, and loading wrappers.
 
-## Code scaffolding
+## Highlights
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- Standalone Angular components
+- Clean, reusable skeleton patterns for common dashboard layouts
+- Global and local configuration support
+- Dark theme friendly CSS variables
+- Structural directive for fast loading-state rendering
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the library, run:
+## Installation
 
 ```bash
-ng build ngx-dashboard-skeleton
+npm install ngx-dashboard-skeleton
 ```
 
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
+## Theme
 
-### Publishing the Library
+Import the library theme once in your global styles:
 
-Once the project is built, you can publish your library by following these steps:
-
-1. Navigate to the `dist` directory:
-
-   ```bash
-   cd dist/ngx-dashboard-skeleton
-   ```
-
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+```scss
+@import 'ngx-dashboard-skeleton/themes/skeleton-theme.css';
 ```
 
-## Running end-to-end tests
+## Quick Start
 
-For end-to-end (e2e) testing, run:
+Import the component you want to use. The exported class names do not use a `Component` suffix.
 
-```bash
-ng e2e
+```ts
+import { Component } from '@angular/core';
+import { SkeletonCard } from 'ngx-dashboard-skeleton';
+
+@Component({
+	selector: 'app-root',
+	standalone: true,
+	imports: [SkeletonCard],
+	template: '<lib-skeleton-card [lines]="4"></lib-skeleton-card>',
+})
+export class AppComponent {}
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Components
 
-## Additional Resources
+### Skeleton Card
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Selector: `lib-skeleton-card`
+
+```html
+<lib-skeleton-card [showImage]="true" [lines]="4"></lib-skeleton-card>
+```
+
+### Skeleton Table
+
+Selector: `lib-skeleton-table`
+
+```html
+<lib-skeleton-table [rows]="6" [columns]="5"></lib-skeleton-table>
+```
+
+### Skeleton Chart
+
+Selector: `lib-skeleton-chart`
+
+```html
+<lib-skeleton-chart type="bar" [height]="260"></lib-skeleton-chart>
+<lib-skeleton-chart type="line" [height]="220"></lib-skeleton-chart>
+<lib-skeleton-chart type="pie" [height]="260"></lib-skeleton-chart>
+```
+
+### Skeleton Avatar
+
+Selector: `lib-skeleton-avatar`
+
+```html
+<lib-skeleton-avatar [size]="64" shape="circle"></lib-skeleton-avatar>
+<lib-skeleton-avatar [size]="64" shape="square"></lib-skeleton-avatar>
+```
+
+### Skeleton Text
+
+Selector: `lib-skeleton-text`
+
+```html
+<lib-skeleton-text [lines]="4" [lineHeight]="16" [gap]="12" [lastLineWidth]="'45%'"></lib-skeleton-text>
+```
+
+### Skeleton Dashboard
+
+Selector: `lib-skeleton-dashboard`
+
+```html
+<lib-skeleton-dashboard [cards]="4" [showChart]="true" [showTable]="true"></lib-skeleton-dashboard>
+```
+
+### Skeleton Wrapper
+
+Selector: `lib-skeleton-wrapper`
+
+```html
+<lib-skeleton-wrapper [loading]="isLoading" skeleton="card" [lines]="4">
+	<app-real-card></app-real-card>
+</lib-skeleton-wrapper>
+```
+
+## Structural Directive
+
+Import `SkeletonDirective` and use `*ngxSkeleton` for conditional skeleton rendering.
+
+```ts
+import { Component } from '@angular/core';
+import { SkeletonDirective } from 'ngx-dashboard-skeleton';
+
+@Component({
+	selector: 'app-root',
+	standalone: true,
+	imports: [SkeletonDirective],
+	templateUrl: './app.html',
+})
+export class AppComponent {}
+```
+
+```html
+<div *ngxSkeleton="isLoading; type: 'card'">
+	<app-real-card></app-real-card>
+</div>
+```
+
+## Configuration
+
+### Global Configuration
+
+Provide `SKELETON_CONFIG` at application level to set shared defaults.
+
+```ts
+import { ApplicationConfig } from '@angular/core';
+import { SKELETON_CONFIG } from 'ngx-dashboard-skeleton';
+
+export const appConfig: ApplicationConfig = {
+	providers: [
+		{
+			provide: SKELETON_CONFIG,
+			useValue: {
+				animationDuration: '1.8s',
+				baseColor: '#e5e7eb',
+				highlightColor: '#ffffff',
+				borderRadius: '12px',
+			},
+		},
+	],
+};
+```
+
+### Local Configuration
+
+Each component accepts a `config` input that overrides the global values.
+
+```html
+<lib-skeleton-text
+	[lines]="4"
+	[config]="{
+		animationDuration: '2s',
+		baseColor: '#e5e7eb',
+		highlightColor: '#ffffff',
+		borderRadius: '14px'
+	}"
+></lib-skeleton-text>
+```
+
+## Dark Mode
+
+Add the `dark` class or `data-theme="dark"` to a parent element.
+
+```html
+<div class="dark">
+	<lib-skeleton-dashboard></lib-skeleton-dashboard>
+</div>
+```
+
+## API Summary
+
+- `SkeletonCard` -> `lib-skeleton-card`
+- `SkeletonTable` -> `lib-skeleton-table`
+- `SkeletonChart` -> `lib-skeleton-chart`
+- `SkeletonAvatar` -> `lib-skeleton-avatar`
+- `SkeletonText` -> `lib-skeleton-text`
+- `SkeletonDashboard` -> `lib-skeleton-dashboard`
+- `SkeletonWrapper` -> `lib-skeleton-wrapper`
+- `SkeletonDirective` -> `[ngxSkeleton]` with `ngxSkeletonType`
+
+## License
+
+MIT
+
