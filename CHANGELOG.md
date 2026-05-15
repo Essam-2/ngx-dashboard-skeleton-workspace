@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.0...v1.1.1) (2026-05-15)
+
+
+### Bug Fixes
+
+* [+] publish using bypass 2FA token ([fe4b22c](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/commit/fe4b22c2f354ed3eea64ca2d056a004aaeb9011b))
+* [+] publish using bypass 2FA token ([332a1b0](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/commit/332a1b0cda844ad9e6398d529f0ca6b7d3b5c403))
+
 # [1.1.0](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.0.1...v1.1.0) (2026-05-15)
 
 
