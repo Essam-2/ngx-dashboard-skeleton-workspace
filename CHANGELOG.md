@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.0.0...v1.0.1) (2026-05-15)
+
+
+### Bug Fixes
+
+* [+] retry npm publish with normal token ([dfc429e](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/commit/dfc429e01959c62a6bd4c5d8f8d66b5c15243f96))
+
 # 1.0.0 (2026-05-07)
 
 
