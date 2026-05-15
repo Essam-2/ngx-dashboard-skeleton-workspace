@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.3...v1.1.4) (2026-05-15)
+
+
+### Bug Fixes
+
+* [+] resolve circular skeleton theme variables ([603697d](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/commit/603697de1c8cc482bb6a655b69248e35fadc72a1))
+
 ## [1.1.3](https://github.com/Essam-2/ngx-dashboard-skeleton-workspace/compare/v1.1.2...v1.1.3) (2026-05-15)
 
 
