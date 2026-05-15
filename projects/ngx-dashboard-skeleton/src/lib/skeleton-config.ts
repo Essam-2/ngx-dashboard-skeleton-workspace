@@ -9,8 +9,8 @@ export interface SkeletonConfig {
 
 export const DEFAULT_SKELETON_CONFIG: Required<SkeletonConfig> = {
   animationDuration: '1.4s',
-  baseColor: 'var(--ngx-skeleton-base)',
-  highlightColor: 'var(--ngx-skeleton-highlight)',
+  baseColor: '#eeeeee',
+  highlightColor: '#f7f7f7',
   borderRadius: '8px',
 };
 
